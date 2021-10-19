@@ -1,0 +1,25 @@
+
+body{
+    margin: 0;
+}
+
+.uni-padding{
+    padding: 0 7%;
+}
+
+#topbar{
+    background-color: #0c63e4;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    overflow: auto;
+}
+
+#buttons{
+    float: right;
+}
+
+#productlist{
+    float: left;
+    color: white;
+    margin: 0;
+}
