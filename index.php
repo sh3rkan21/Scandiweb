@@ -31,8 +31,6 @@
 $obj = new ProductsView();
 $obj->showAllProducts();
 
-
-
 ?>
 </body>
 </html>
