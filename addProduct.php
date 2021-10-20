@@ -29,7 +29,7 @@
     })
 </script>
 
-<form id = "product_form" method="POST" action="process.php">
+<form id = "product_form" method="POST" action="classes/productscontr.class.php">
   <div class="mb-3">
     <label for="sku" class="form-label">SKU</label>
     <input type="text" class="form-control" id="sku" name="sku">

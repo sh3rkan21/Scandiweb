@@ -27,16 +27,13 @@
     </div>
 
 <?php
-    $prodObj = new Product();
-     $var = $prodObj->getProduct(1);
-     echo $var[0]['sku'] . "<br>";
-     echo $var[0]['name'] . "<br>";
-     echo $var[0]['price'] . "<br>";
-     echo $var[0]['product_type'] . "<br>";
-     echo $var[0]['size'] . "<br>";
+
+$obj = new ProductsView();
+$obj->showAllProducts();
+
+$obj2 = new ProductsContr();
+$obj2->addProduct("Skooby", "unNume", 32,"DVD",300,0,0,0);
 
 ?>
-
-
 </body>
 </html>
