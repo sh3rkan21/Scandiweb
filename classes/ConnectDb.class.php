@@ -31,3 +31,17 @@ class ConnectDb
         return $this->conn;
     }
 }
+
+// CREATE TABLE products SQL
+/*
+CREATE TABLE `shop`.`products` ( `id` INT NOT NULL AUTO_INCREMENT ,
+`sku` VARCHAR(155) NOT NULL ,
+`name` VARCHAR(155) NOT NULL ,
+`price` DECIMAL(10,2) NOT NULL ,
+`product_type` VARCHAR(155) NOT NULL ,
+`size` INT NULL DEFAULT NULL ,
+`width` INT NULL DEFAULT NULL ,
+`length` INT NULL DEFAULT NULL ,
+`weight` INT NULL DEFAULT NULL ,
+PRIMARY KEY (`id`)) ENGINE = InnoDB;
+*/

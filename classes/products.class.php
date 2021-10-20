@@ -22,7 +22,8 @@ class Products {
     }
 
     protected function setProduct($sku,$name,$price,$productType,$size,$height,$width,$length,$weight) {
-        $sql = "INSERT INTO products(sku,name,price,product_type)VALUES(?, ?, ?, ?,?,?,?,?,?)";
+
+        $sql = "INSERT INTO products(sku,name,price,product_type,size,height,width,length,weight)VALUES(?,?,?,?,?,?,?,?,?)";
         $stmt = ConnectDb::getInstance()->getConnection()->prepare($sql);
         $stmt->execute([$sku,$name,$price,$productType,$size,$height,$width,$length,$weight]);
     }
