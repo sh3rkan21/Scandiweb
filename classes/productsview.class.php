@@ -1,5 +1,7 @@
 <?php
 
+
+
 class ProductsView extends products {
 
     public function showProductById($id) {

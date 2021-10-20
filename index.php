@@ -31,8 +31,7 @@
 $obj = new ProductsView();
 $obj->showAllProducts();
 
-$obj2 = new ProductsContr();
-$obj2->addProduct("Skooby", "unNume", 32,"DVD");
+
 
 ?>
 </body>

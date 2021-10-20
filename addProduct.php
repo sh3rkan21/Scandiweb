@@ -44,7 +44,7 @@
   </div>
   <div>
     <label for="productType" class="visually-hidden">Type Switcher</label>
-    <select class="form-select" id="productType" name="productType" >
+    <select class="form-select" id="productType" name="product_type" >
 
       <option selected>Type Switcher</option>
       <option value="DVD" id="DVD">DVD-disc</option>
@@ -67,7 +67,7 @@
           <input type="text" id="width" name="width">
           <br>
           <label for="lenght">Lenght (CM)</label>
-          <input type="text" id="lenght" name="lenght">
+          <input type="text" id="lenght" name="length">
           <br>
           <span style="font-weight: bold">Please, provide size in CM!</span>
       </div>
