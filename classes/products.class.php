@@ -8,8 +8,6 @@ class Products {
         $sql = 'SELECT * FROM products WHERE id = ?';
         $stmt = ConnectDb::getInstance()->getConnection()->prepare($sql);
         $stmt->execute([$id]);
-
-
         $results = $stmt->fetch();
         return $results;
     }
@@ -26,6 +24,13 @@ class Products {
         $sql = "INSERT INTO products(sku,name,price,product_type,size,height,width,length,weight)VALUES(?,?,?,?,?,?,?,?,?)";
         $stmt = ConnectDb::getInstance()->getConnection()->prepare($sql);
         $stmt->execute([$sku,$name,$price,$productType,$size,$height,$width,$length,$weight]);
+    }
+
+    protected function deleteProducts($ids) {
+        $placeholders = trim(str_repeat('?,', count($ids)), ',');
+        $sql = 'DELETE FROM products WHERE id IN ( '.$placeholders.')';
+        $stmt = ConnectDb::getInstance()->getConnection()->prepare($sql);
+        return $stmt->execute($ids);
     }
 
 }

@@ -78,6 +78,6 @@
           <span style="font-weight: bold">Please, provide weight in KG!</span>
       </div>
   </div>
-    <input class="btn btn-primary" type="submit"  name="submit" value="Save">
+    <input class="btn btn-primary" type="submit"  name="save" value="Save">
     <a href="index.php"><button type="button" class="btn btn-danger">Cancel</button></a>
 </form>

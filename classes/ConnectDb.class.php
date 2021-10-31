@@ -32,7 +32,7 @@ class ConnectDb
     }
 }
 
-// CREATE TABLE products SQL
+
 /*
 CREATE TABLE `shop`.`products` ( `id` INT NOT NULL AUTO_INCREMENT ,
 `sku` VARCHAR(155) NOT NULL ,
